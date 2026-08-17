@@ -1,0 +1,50 @@
+{
+  "name": "dsh-ess-proposal",
+  "version": "1.0.2",
+  "description": "DSH plugin: Generate solar + energy storage proposals from electricity bills",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "data",
+    "prompt",
+    "cordis.patch.yml",
+    "README.md",
+    "License"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "solar",
+    "ess",
+    "energy-storage"
+  ],
+  "license": "MIT",
+  "author": "AlanHuang168",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlanHuang168/dsh-ess-proposal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlanHuang168/dsh-ess-proposal/issues"
+  },
+  "homepage": "https://github.com/AlanHuang168/dsh-ess-proposal#readme",
+  "dependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-tools": "^0.0.1-rc.1",
+    "dotenv": "^17.4.2",
+    "openai": "^7.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
+  },
+  "bundle": {
+    "patch": "./cordis.patch.yml"
+  }
+}

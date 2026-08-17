@@ -1,0 +1,10 @@
+{
+    "defaults": {
+      "solar_cost_rm_per_kwp": 4300,
+      "battery_cost_rm_per_kwh": 1800,
+      "pv_yield_kwh_per_kwp_year": 1400,
+      "grid_emission_kg_per_kwh": 0.581,
+      "fallback_rate_rm_per_kwh": 0.55
+    },
+    "notes": "马来西亚默认假设，用户可按本地市场修改本文件"
+  }
